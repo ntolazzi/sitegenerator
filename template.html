@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ settings['page_name'] }}</title>
+    <link rel="stylesheet" href="{{ settings['style_sheet'] }}">
+</head>
+<body>
+
+{% for article in articles %}
+    {{ article }}
+{% endfor %}
+
+{% if landing %}
+    <a href="all_articles.html">All Articles</a>
+{% endif %}
+
+</body>
+</html>
